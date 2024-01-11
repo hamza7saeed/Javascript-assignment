@@ -1,0 +1,68 @@
+Assignment 1: String Validation
+Problem Statement:
+
+Write a JavaScript function named checkCapital that takes a string as input and checks if the provided string is in capital letters. 
+Your function should return "Your string is valid" if the input string is entirely in uppercase; otherwise, it should return "Your string is not valid."
+
+
+function checkCapital(parameter){
+if (parameter === parameter.toUpperCase()){
+  return ("Your string is valid")
+} else {
+  return("Your string is not valid")
+}
+}
+let a = checkCapital("HAMZA");
+console.log(a);
+=------------------------------------------------------------
+
+Assignment 2: Minimum Length Checker
+Problem Statement:
+
+Write a JavaScript function named checkMinLength that takes a string as input. The function should check if the length of the input string is less than 8 characters.
+If the length is less than 8, it should print or return a message stating, "Input should be greater than 8 characters."
+
+function checkMinLength(str){
+      if ( str.length >=8){
+        console.log("Your string is Okay!")
+      } else {
+        console.log("Input should be greater than 8 characters")
+      }
+    }
+    checkMinLength("pizzaaaa")
+---------------------------------------------------------------
+
+Assignment 3: String Index Assignment
+Problem Statement:
+
+Write a JavaScript script that creates a string and assigns different characters to individual indices.
+After the assignment, print or log the resulting string. Observe whether the string changes or not.
+If it does not change, provide an explanation of why the string remains the same.
+
+let a = "JavaScript";
+let b = a.charAt(3)
+console.log(b)
+
+To the my point of view string is immutable thats why it cannot be change, although we explicitly change. 
+------------------------------------------------------------------
+Assignment 4: Word Presence Checker
+Problem Statement:
+Write a JavaScript function named checkWordPresence that takes two parameters: a string and a target word.
+The function should check if the target word is present in the input string.
+If the target word is found, the function should return "Word found in the string"; otherwise, it should return "Word not found in the string."
+
+function checkWordPresence(inputString, targetWord) {
+    if (targetWord.search(inputString)){
+      console.log("Word found in the string")
+    } else {
+      console.log("Word is found in the string")
+    }
+}
+checkWordPresence("Hamza Saeed", "Saeed")
+------------------------------------------------------------------
+Assignment 5: String Slicing and Substring Extraction
+Problem Statement:
+Write a JavaScript script that creates a string and uses both the slice and substring methods to extract a portion of that string. 
+Store the extracted substring in another variable. Additionally, experiment with negative indices in both methods to observe the behavior.
+
+
