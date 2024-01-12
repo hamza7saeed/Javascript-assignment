@@ -65,4 +65,38 @@ Problem Statement:
 Write a JavaScript script that creates a string and uses both the slice and substring methods to extract a portion of that string. 
 Store the extracted substring in another variable. Additionally, experiment with negative indices in both methods to observe the behavior.
 
+let str = "Chicken Pizza";
+let newStr = str.slice(0,7);
+console.log(newStr);
+let anotherNewStr = newStr.substring(0,3);
+console.log(anotherNewStr);
+let negStr = str.slice(-7,-1); // In negative argument, with slice method it works from the end.
+console.log(negStr);
+let anotherNegStr = str.substring(-1,10); // In this behaviour negative value is equal to 0, if we add both arguments with minus values its results us zero.
+console.log(anotherNegStr)
 
+------------------------------------------------------------------
+Assignment 6: Character and Word Checker Function
+Problem Statement:
+
+Write a JavaScript function named checkCharactersAndWords that takes a string as input. The function should perform the following tasks:
+
+Count and return the total number of characters in the string.
+Count and return the total number of words in the string. (Assume words are separated by spaces)
+
+
+function CheckCharactersAndWords(inputString) {
+  this.length = function(){
+   console.log(inputString.length);
+
+  }
+  this.wordCount = function(){
+    console.log(inputString.split(/\s+/).length)
+  }
+
+}
+
+let a = new CheckCharactersAndWords("I Love Programming")
+a.length()
+a.wordCount()
+console.log(a)
